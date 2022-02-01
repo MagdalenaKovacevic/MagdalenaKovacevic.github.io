@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  font-family: 'Holtwood One SC', serif;
+  padding: 0;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#surface {
+  background-color: rgba(146, 100, 69, 0.753);
+  border: 5px solid #000;
+  height: 550px;
+  width: 1000px;
+  position: relative;
+  margin: 2% auto;
+}
+#sprite {
+  position: absolute;
+  width: 75px; 
+  height: 95px;
+  overflow: hidden;
+}
+#spriteImg {
+  height: 90px; 
+  position: relative;
+}
+#output {
+  color: black;
+  background-color: white;
+  width: 10%;
+  padding: 1%;
+  margin: 2% auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 196, 0);
+  text-shadow: 1px 1px 1px black,
+                1px -1px 1px black,
+                -1px 1px 1px black,
+                -1px -1px 1px black;
+}
+nav{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+nav a{
+  color: black;
+  text-decoration: none;
+  transition: 0.5s color;
+  font-size: 40px;
+  padding: 2%;
+  
+}
+nav a:hover{
+  color: grey;
+}
+
+/**************************************/
+
+@media screen and (max-width: 1000px) {
+  #surface{
+    height: 275px;
+    width: 340px;
+  }
+  h1{
+    font-size: 30px;
+    
+  }
+  #output{
+    width: 50%;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  nav{
+    width: 100%;
+  }
+}
